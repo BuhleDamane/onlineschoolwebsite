@@ -17,11 +17,11 @@
                 <a href="#" class="logo"><span class="firstSpan">B</span >right <span class="secondSpan">L</span>eap <span  class="thirdSpan">O</span>nline</a>
             </div>
                 <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Get your Certificate</a></li>
-            <li><a href="#" class="navContact">Contact Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="certificates.html">Get your Certificate</a></li>
+            <li><a href="contact.html" class="navContact">Contact Us</a></li>
             <li><a href="" class="navLogin">
                 <span><i class="fa-regular fa-user"></i></span>
                 <p>Login/Register</p>
@@ -29,6 +29,56 @@
         </ul>
             </nav>
         </div>
+        <section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="mb-3">🎓 Claim Your Certificate</h1>
+    <p class="lead">Completed a course? Generate and download your official Bright Leap Online certificate here.</p>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="certificateForm" class="p-4 shadow rounded bg-white">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+          </div>
+          <div class="mb-3">
+            <label for="course" class="form-label">Course Completed</label>
+            <select class="form-select" id="course">
+              <option selected disabled>Choose your course</option>
+              <option>R Assistant</option>
+              <option>Paralegal</option>
+              <option>UX/UI Design</option>
+              <option>Virtual Assistant</option>
+              <option>Professional Foundation</option>
+              <option>Excel for Beginners</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="completionCode" class="form-label">Course Completion Code</label>
+            <input type="text" class="form-control" id="completionCode" placeholder="Enter your code">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Generate Certificate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">📄 Certificate Preview</h2>
+    <img src="images/sample-certificate.png" alt="Certificate preview" class="img-fluid shadow rounded" style="max-width: 100%; height: auto;">
+    <p class="mt-3 text-muted">Your certificate will include your name, the course, date, and a unique ID.</p>
+  </div>
+</section>
+<section class="py-4 text-center">
+  <div class="container">
+    <button class="btn btn-success d-none" id="downloadBtn">Download My Certificate</button>
+  </div>
+</section>
+
         <footer class="bg-dark text-white py-5">
             <div class="container">
               <div class="row">
