@@ -138,7 +138,7 @@ nav{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-1750px); /* adjust based on total width */
+      transform: translateX(-1750px); 
     }
   }
   
