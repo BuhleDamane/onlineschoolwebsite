@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #000;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    
+}
+.container{
+   padding: 10px 5.5%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.firstSpan{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+.secondSpan{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+.thirdSpan{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.fa-user{
+    margin-left: 40px;
+}
+
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+   
+ }
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    height: 2px;
+    background-color: #e11111;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+    
+ }
+ .home-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  flex: 1 1 500px;
+  padding-right: 2rem;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.home-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.review-carousel {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scrollLeft 40s linear infinite;
+    width: max-content;
+  }
+  
+  .testimonial-card {
+    width: 250px;
+    min-width: 250px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1750px); /* adjust based on total width */
+    }
+  }
+  
