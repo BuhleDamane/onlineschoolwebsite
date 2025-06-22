@@ -1,116 +1,166 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: poppins, sans-serif;
     box-sizing: border-box;
 }
 body{
     background-color: #fff;
     color: #000;
-     font-family: "Merriweather", serif;
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+  color: #1A1F26;
 }
-.container{
-   padding: 10px 5.5%;
+
+p{
+    font-family: Neue Montreal, sans-serif;
+    color: #6c757d;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.btn{
+    background-color: #0c3891cd;
+    color: #fff;
+    font-family: "Merriweather", serif;
+
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 2%;
     flex-wrap: wrap;
+    font-family: "Merriweather", serif;
+
 }
+
+.logo a{
+  text-decoration: none;
+  padding: 15px 2%;
+}
+.logo a span{
+  font-size: 1.8rem;
+  color: #0c3891cd;
+  padding: 15px 2%;
+
+}
+
+.logo a span:first-child{
+    color: #0c3891cd;
+}
+.logo a span:nth-child(2){
+    color: rgba(132, 15, 132, 0.792);
+}
+.logo a span:nth-child(3){
+    color: hsl(39, 100%, 50%);
+}
+
+
+
 .firstSpan{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: #0c3891cd;
 }
 .secondSpan{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: rgba(132, 15, 132, 0.792)
 }
 .thirdSpan{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: yellow;
 }
 
-.fa-user{
-    margin-left: 40px;
-}
 
  nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    font-weight: 600;
  }
 
  nav ul li a{
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
+    color: #0c3891cd;
    
  }
  nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
-    height: 2px;
-    background-color: #e11111;
+    height: 3.5px;
+    background-color: rgba(132, 15, 132, 0.792);
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.7s;
  }
- nav ul li a:hover::after{
-    width: 100%;
+nav ul li a:hover::after{
+    width: 50%;
     
  }
- .home-section {
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
-}
+  nav button{
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 15px;
+ }
 
-.home-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+ .register{
+  background-color: #0c3891cd;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+ }
+  .register:hover{
+    background-color: #fff;
+    color: #0c3891cd;
+    border: 1px solid #0c3891cd;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .sign-in{
+    background-color: #fff; ;
+    color: #0c3891cd;
+    border: 1px solid #0c3891cd;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .sign-in:hover{
+    background-color: #0c3891cd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+ 
+ .hero-section{
+  background-color: #f8f9fa;
+  height: 80vh;
+  margin-top: 20px;
+  
+ }
+.hero-section .btn{
+background-color: #0c3891cd;
+color: #fff;
 }
-
-.home-text {
-  flex: 1 1 500px;
-  padding-right: 2rem;
+.rounded{
+  width: 80%;
+  border-radius: 50%;
 }
-
-.home-text h1 {
-  font-size: 2.5rem;
-  color: #222;
-}
-
-.home-text p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.home-image {
-  flex: 1 1 500px;
-  text-align: center;
-}
-
-.home-image img {
-  max-width: 100%;
+img .rounded{
+  width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 .review-carousel {
     height: auto;
@@ -255,4 +305,11 @@ nav{
 .login-link {
   margin-top: 1rem;
   font-size: 0.9rem;
+}
+footer {
+  background-color:#0c3891cd;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6c757d;
 }
